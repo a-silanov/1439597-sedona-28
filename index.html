@@ -17,9 +17,8 @@
       </nav>
     </header>
       <main>
-          <img src="img/background photo.jpg" width="1200" height="509">
-          <img src="img/recktangle-background.jpg" width="1200" height="272">
-          <img src="img/Shape-background.jpg" width="1200" height="57">
+          <img src="img/background.jpg" width="1200" height="725" alt="">
+          <img src="img/Shape-background.jpg" width="1200" height="57" alt="">
           <img src="img/welcome.svg" width="457" height="351" alt="Welcome"> 
         <div>
           <h2>седона-небольшой городок в аризоне,<br>
@@ -36,7 +35,7 @@
             <img src="img/image.jpg" width="800" height="256" alt="Фото террасы">
           </div>
           <div>
-            <img src="img/icon-1.svg" widyh="75" height="72" alt="Иконка дома">
+            <img src="img/icon-1.svg" width="75" height="72" alt="Иконка дома">
             <h2>жильё</h2>
             <p>рекомендуем пожить в настоящем<br>
               мотеле,всё как в кино!</p>
@@ -55,7 +54,7 @@
           </div>
           <div>
             <h2>там есть мост дьявола</h2>
-            <img src="img/image 2.jpg" width="800" height="256">
+            <img src="img/image-2.jpg" width="800" height="256" alt="">
             <p>-№2-</p>
             <p>да,по нему можно пройти!если конечно<br>
               вы осмелитесь</p>
@@ -88,26 +87,31 @@
         </div>
         <div>
           <p>поиск гостиницы в седоне</p>
-          <p>
-            <label>дата заезда</label>
-            <input type="text" value="24 апреля 2017">
-          </p>
-          <p>
-            <label>дата выезда</label>
-            <input type="text" value="4 июля 2017">
-          </p>
-          <p>
-            <label>взрослые:</label>
-            <button type="button">-</button> 
-            <input type="text" value="2">
-            <button type="button">+</button>
-          </p>
-          <p>
-            <label>дети:</label>
-            <button type="button">-</button> 
-            <input type="text" value="0">
-            <button type="button">+</button>
-          </p>      
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label for="arriving-date">дата заезда</label>
+              <input id="arriving-date" type="text" name="date" placeholder="01 января 2000"
+               value="24 апреля 2017">
+            </p>
+            <p>
+              <label for="departure-date">дата выезда</label>
+              <input id="departure-date" type="text" name="date" placeholder="01 января 2000"
+               value="4 июля 2017">
+            </p>
+            <p>
+              <label for="adults">взрослые:</label>
+              <button type="button">-</button> 
+              <input id="adults" name="quantity" type="text" value="2">
+              <button type="button">+</button>
+            </p>
+            <p>
+              <label for="children">дети:</label>
+              <button type="button">-</button> 
+              <input id="children" name="quantity" type="text" value="0">
+              <button type="button">+</button>
+            </p>
+            <a href="#">Найти</a>
+          </form>        
         </div>
         <div>
           <img src="img/map.jpg" width="1199" height="594" alt="интерактивная карта">
@@ -116,7 +120,7 @@
      <footer>
       <section>
         <p>#visitsedona</p>
-        <p><a href="#">тел: +7(495)666-02-66</a></p>
+        <p><a href="tel:+7(495)666-02-66">тел: +7(495)666-02-66</a></p>
       </section>
       <section>  
         <ul>

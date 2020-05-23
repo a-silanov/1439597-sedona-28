@@ -26,27 +26,50 @@
     </header>
     <main>
         <div>
-          <img src="img/background-inner.jpg" widtg="1200" height="217">
-          <p>инфраструктура:</p>
-          <p>
-            <label><input type="checkbox">бассейн</label>
-            <label><input type="checkbox">парковка</label>
-            <label><input type="checkbox">wi-fi</label>
-          </p>
-          <p>тип жилья:</p>
-          <p>
-            <label><input type="checkbox">гостиница</label>
-            <label><input type="checkbox">мотель</label>
-            <label><input type="checkbox">апартаменты</label>
-          </p>
-          <p>Стоимость в сутки(р):</p>
-          <p>от 0 до 3000</p>
-          <p>
-            <input type="range" min="0" max="3000">
-          </p>
-          <p>  
-            <button type="button">показать</button>
-          </p>
+          <img src="img/background-inner.jpg" width="1200" height="217" alt="">
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <fieldset>
+              <legend>инфраструктура:</legend>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="pool" name="pool" checked>
+                    <label for="pool">бассейн</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="parking" name="pool">
+                    <label for="parking">парковка</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="wi-fi" name="wi-fi">
+                    <label for="wi-fi">wi-fi</label> 
+                  </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+              <legend>тип жилья:</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" id="hotel" name="hotel" checked>
+                  <label for="hotel">гостиница</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="motel" name="motel" checked>
+                  <label for="motel">мотель</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="apartment" name="apartment" checked>
+                  <label for="apartment">апартаменты</label>
+                </li>
+              </ul>      
+            </fieldset>
+            <fieldset>
+              <legend>стоимость в сутки(р):</legend>
+              <p>от 0 до 3000</p>
+              <label for="amount"></label>
+                <input type="range" id="amount" min="0" max="3000">
+            </fieldset>   
+                <button type="submit">показать</button>
+          </form>            
         </div>
         <div>
           <p><strong>найдено:3</strong></p>
@@ -102,7 +125,7 @@
     <footer>
       <section>
         <p>#visitsedona</p>
-        <p><a href="#">тел: +7(495)666-02-66</a></p>
+        <p><a href="tel:+7(495)666-02-66">тел: +7(495)666-02-66</a></p>
       </section>
       <section>  
         <ul>
