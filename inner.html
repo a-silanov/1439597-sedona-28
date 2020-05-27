@@ -20,68 +20,68 @@
       </nav>
     </header>
     <main>
-        <div>
+        <div class="filter-hotel">
           <img src="img/background-inner.jpg" width="1200" height="217" alt="">
           <form action="https://echo.htmlacademy.ru" method="get">
             <fieldset>
-              <legend>инфраструктура:</legend>
+              <legend class="infrastructure">инфраструктура:</legend>
                 <ul>
-                  <li>
+                  <li class="infrastructure-item">
                     <input type="checkbox" id="pool" name="pool" checked>
                     <label for="pool">бассейн</label>
                   </li>
-                  <li>
+                  <li class="infrastructure-item">
                     <input type="checkbox" id="parking" name="pool">
                     <label for="parking">парковка</label>
                   </li>
-                  <li>
+                  <li class="infrastructure-item">
                     <input type="checkbox" id="wi-fi" name="wi-fi">
                     <label for="wi-fi">wi-fi</label> 
                   </li>
                 </ul>
             </fieldset>
             <fieldset>
-              <legend>тип жилья:</legend>
+              <legend class="accommodation">тип жилья:</legend>
               <ul>
-                <li>
+                <li class="accommodation-type">
                   <input type="checkbox" id="hotel" name="hotel" checked>
                   <label for="hotel">гостиница</label>
                 </li>
-                <li>
+                <li class="accommodation-type">
                   <input type="checkbox" id="motel" name="motel" checked>
                   <label for="motel">мотель</label>
                 </li>
-                <li>
+                <li class="accommodation-type">
                   <input type="checkbox" id="apartment" name="apartment" checked>
                   <label for="apartment">апартаменты</label>
                 </li>
               </ul>      
             </fieldset>
             <fieldset>
-              <legend>стоимость в сутки(р):</legend>
-              <p>от 0 до 3000</p>
+              <legend class="hotel-price">стоимость в сутки(р):</legend>
+              <p class="price-from-to">от 0 до 3000</p>
               <label for="amount"></label>
                 <input type="range" id="amount" min="0" max="3000">
             </fieldset>   
-                <button type="submit">показать</button>
+                <button class="show" type="submit">показать</button>
           </form>            
         </div>
         <div>
-          <p><strong>найдено:3</strong></p>
-          <p>сортировка</p>
-          <ul>
-            <li>
+          <p class="found"><strong>найдено:3</strong></p>
+          <p class="assortment">сортировка</p>
+          <ul class="assortment-result">
+            <li class="assortment-type1">
               <a href="#">по цене</a>
             </li>
-            <li>
+            <li class="assortment-type2">
               <a href="#">по типу</a>
             </li>
-            <li>
+            <li class="assortment-type2">
               <a href="#">по рейтингу</a>
             </li>
           </ul>
-          <a href="#">иконка вверх</a>
-          <a href="#">иконка вниз</a>
+          <a class="icon-up" href="#">иконка вверх</a>
+          <a class="icon-down" href="#">иконка вниз</a>
         </div>
         <div>
             <img src="img/amarata.jpg" width="135" height="90" alt="Фото отеля">
@@ -117,10 +117,11 @@
             </p>
           </div>    
     </main>      
-    <footer>
+    <footer>    
       <section>
-        <p>#visitsedona</p>
-        <p><a href="tel:+7(495)666-02-66">тел: +7(495)666-02-66</a></p>
+        <h2 hidden>обратная связь</h2>
+        <p class="hashtag">#visitsedona</p>
+        <p class="tel"><a href="tel:+7(495)666-02-66">тел: +7(495)666-02-66</a></p>
       </section>
       <section>  
         <ul class="social-button">
@@ -137,9 +138,9 @@
       </section>
       <p>
         website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" 
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="html-logo" src="img/logo-htmlacademy.svg" 
          width="115" height="41" alt="Logo html academy"></a>
       </p>
-      </footer>
+    </footer>
    </body>
  </html>    
