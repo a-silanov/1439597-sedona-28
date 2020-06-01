@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Проект: Седона</title>
@@ -7,25 +7,27 @@
     rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+
+  <body class="page-body">
     <header class="main-header">
-      <img src="img/logo-sedona.svg" width="138" height="70" alt="Лого">
+      <img class="logo-sedona" src="img/logo-sedona.svg" width="138" height="70" alt="Лого">
       <nav class="main-navigation">
           <ul class="menu-list">
             <li><a href="blank.html">Информация</a></li>
             <li><a href="blank.html">Фото и Видео</a></li>
             <li><a href="blank.html">Карта штата</a></li>
             <li><a href="inner.html">Гостиницы</a></li>
-        </ul>    
+          </ul>
       </nav>
     </header>
-    <main>
+
+    <main class="container">
         <div class="filter-hotel">
           <img src="img/background-inner.jpg" width="1200" height="217" alt="">
-          <form action="https://echo.htmlacademy.ru" method="get">
-            <fieldset>
+          <form class="form" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="filter">
               <legend class="infrastructure">инфраструктура:</legend>
-                <ul>
+                <ul class="infrastructure-list">
                   <li class="infrastructure-item">
                     <input type="checkbox" id="pool" name="pool" checked>
                     <label for="pool">бассейн</label>
@@ -40,9 +42,9 @@
                   </li>
                 </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter">
               <legend class="accommodation">тип жилья:</legend>
-              <ul>
+                <ul class="accommodation-list">
                 <li class="accommodation-type">
                   <input type="checkbox" id="hotel" name="hotel" checked>
                   <label for="hotel">гостиница</label>
@@ -57,16 +59,16 @@
                 </li>
               </ul>      
             </fieldset>
-            <fieldset>
+            <fieldset class="filter">
               <legend class="hotel-price">стоимость в сутки(р):</legend>
               <p class="price-from-to">от 0 до 3000</p>
               <label for="amount"></label>
                 <input type="range" id="amount" min="0" max="3000">
-            </fieldset>   
                 <button class="show" type="submit">показать</button>
+            </fieldset>   
           </form>            
         </div>
-        <div>
+        <div class="found-list">
           <p class="found"><strong>найдено:3</strong></p>
           <p class="assortment">сортировка</p>
           <ul class="assortment-result">
@@ -83,9 +85,9 @@
           <a class="icon-up" href="#">иконка вверх</a>
           <a class="icon-down" href="#">иконка вниз</a>
         </div>
-        <div>
-            <img src="img/amarata.jpg" width="135" height="90" alt="Фото отеля">
-            <h2 class="hotel-name">amara resort & spa</h2>
+        <div class="hotel">
+          <img class="hotel-image" src="img/amarata.jpg" width="135" height="90" alt="Фото отеля">
+              <div class="hotel1"><h2 class="hotel-name">amara resort & spa</h2>
             <p class="hotel-type">гостиница</p>
             <p class="price">от 4000 р.</p>
             <a class="link-hotelinfo" href="#">подробнее</a>
@@ -93,10 +95,11 @@
             <p>
                 <span class="rating">рейтинг 8,5</span>
             </p>
+              </div>
           </div>  
-          <div>
+          <div class="hotel">
             <img src="img/desert.jpg" width="135" height="90" alt="Фото отеля">
-            <h2 class="hotel-name">desert quail inn</h2>
+              <div class="hotel2"><h2 class="hotel-name">desert quail inn</h2>
             <p class="hotel-type">мотель</p>
             <p class="price">от 3000 р.</p>
             <a class="link-hotelinfo" href="#">побробнее</a>
@@ -104,10 +107,11 @@
             <p>
                 <span class="rating">рейтинг 8,9</span>
             </p>
+              </div>
           </div>
-          <div>
+          <div class="hotel">
             <img src="img/villas.jpg" width="135" height="90" alt="Фото отеля">
-            <h2 class="hotel-name">villas at poco diablo</h2>
+              <div class="hotel3"><h2 class="hotel-name">villas at poco diablo</h2>
             <p class="hotel-type">апартаменты</p>
             <p class="price">от 2000 р.</p>
             <a class="link-hotelinfo" href="#">подробнее</a>
@@ -115,9 +119,11 @@
             <p>
                 <span class="rating">рейтинг 9,2</span>
             </p>
+            </div>
           </div>    
-    </main>      
-    <footer>    
+    </main>    
+
+    <footer class="page-footer main-footer">    
       <section>
         <h2 hidden>обратная связь</h2>
         <p class="hashtag">#visitsedona</p>
