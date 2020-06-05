@@ -54,6 +54,12 @@ a:hover {
   height: 100%;
 }
 
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
 
 
 /* Main navigation */
@@ -62,19 +68,20 @@ a:hover {
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
-  color: var(--black-base)
+  color: var(--black-base);
 }
 
 .logo-sedona {
   width: 138px;
   height: 70;
+  position: absolute;
+  margin-left: 531px;
 }
 
 
 .main-navigation {
   width: 1200px;
   background-color: var(--base-white);
-  margin-bottom: 60px;
 }
 
 .menu-list {
@@ -103,9 +110,8 @@ a:hover {
   display: flex;
   justify-content: center;
   background-image: url(../img/background.jpg);
-  height: 725px;
   width: 1200px;
-
+  height: 509px;
 }
 
 .background2 {
@@ -133,6 +139,7 @@ a:hover {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
+    padding-top: 43px
   }
 
 .reasons-description {
@@ -141,6 +148,7 @@ a:hover {
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
+  padding-bottom: 51px;
 }
 
 
@@ -150,6 +158,10 @@ a:hover {
   width: 400px;
   text-align: center;
   background-color: var(--blue-base);
+}
+
+.reason1-foto {
+  display: block;
 }
 
 .reasons-with-image2 {
@@ -165,6 +177,7 @@ a:hover {
   color: var(--base-white);
   font-size: 21px;
   line-height: 21px;
+  margin-top: 47px;
 }
 
 .reasons-white-number {
@@ -186,6 +199,9 @@ a:hover {
   display: flex;
   justify-content: space-around;
   text-align: center;
+  padding-top: 47px;
+  padding-bottom: 54px;
+  background-color: #EEEEEE;
 }
 
 .reasons-black {
@@ -219,6 +235,12 @@ a:hover {
   margin:auto;
 }
 
+.specials1 {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 82px;
+}
+
 .specials-name {
   font-weight: bold;
   font-size: 21px;
@@ -245,6 +267,11 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-content: space-around;
+  width: 458px;
+}
+
+.search {
+  padding-top: 58px;
 }
 
 .search-title {
@@ -267,7 +294,7 @@ a:hover {
   text-align: center;
   background-color: var(--brown-base);
   color: var(--base-white);
-  width: 568px;
+  padding: 30px 124px;
 }
 
 .search-hotel:hover {
@@ -316,6 +343,7 @@ a:hover {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  padding: 16px 182px;
 }
 
 .search-button:hover {
@@ -531,22 +559,23 @@ a:hover {
 
 
 .contacts {
-  width: 251px;
-  margin-bottom: 36px;
-  margin-top: 23px;
+  width: 400px;
+  text-align: center;
 }
 
 .hashtag {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  margin-top: 23px;
+  padding-bottom: 9px
 }
 
 .tel {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  color: var(--black-base)
+  color: var(--black-base);
 }
 
 .social-button {
@@ -562,8 +591,21 @@ a:hover {
 .social-icon {
   text-align: center;
   background-color: var(--blue-base);
-  width: 46px;
-  height: 48px;
+  margin-bottom: 37px;
+}
+
+.twitter {
+  padding-top: 17px;
+  padding-bottom: 16px;
+  padding-right: 14px;
+  padding-left: 15px;;
+}
+.facebook {
+  padding: 13px 17px;
+}
+
+.youtube {
+  padding: 16px 13px;
 }
 
 .html-logo:hover {
