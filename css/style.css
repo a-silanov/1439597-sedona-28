@@ -31,6 +31,7 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
+  font-size: 21px;
   line-height: 26px;
   color: var(--black-base);
   text-transform: uppercase;
@@ -67,9 +68,9 @@ a:hover {
 .main-header {
   font-weight: bold;
   font-size: 14px;
-  line-height: 26px;
   color: var(--black-base);
 }
+
 
 .logo-sedona {
   width: 138px;
@@ -84,26 +85,57 @@ a:hover {
   background-color: var(--base-white);
 }
 
+.main-navigation li:nth-child(1) {
+  padding-left: 74px;
+  margin: 0;
+  width: 240px;
+  text-align: left;
+}
+
+.main-navigation li:nth-child(4) {
+  padding-right:74px;
+  width: 240px;
+  text-align: right;
+  margin: 0;
+}
+
+.main-navigation li:nth-child(2) {
+  padding: 0;
+  width: 288px;
+  text-align: left;
+  margin: 0;
+}
+
+.main-navigation li:nth-child(3) {
+  padding: 0;
+  width: 288px;
+  text-align: right;
+}
+
+
 .menu-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   list-style: none;
   text-decoration: none;
   font-weight: bold;
   font-size: 14px;
-  line-height: 26px;
   color: var(--black-base);
 }
 
 .menu-list a {
   color: var(--black-base);
-  text-align: center;
 }
 
 .menu-list li:hover {
   color: var(--blue-base);
 }
+
+
+
+
+
+
 
 
 .background {
@@ -134,20 +166,14 @@ a:hover {
 }
 
 .reasons-title {
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-style: normal;
     font-weight: bold;
+    padding-top: 43px;
     font-size: 21px;
     line-height: 26px;
-    padding-top: 43px
   }
 
 .reasons-description {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
-  line-height: 26px;
   padding-bottom: 51px;
 }
 
@@ -202,6 +228,7 @@ a:hover {
   padding-top: 47px;
   padding-bottom: 54px;
   background-color: #EEEEEE;
+  font-size: 14px;
 }
 
 .reasons-black {
@@ -289,6 +316,7 @@ a:hover {
 
 .search-hotel {
   font-weight: bold;
+  text-transform: uppercase;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
@@ -344,6 +372,7 @@ a:hover {
   font-size: 21px;
   line-height: 26px;
   padding: 16px 182px;
+  text-transform: uppercase;
 }
 
 .search-button:hover {
@@ -355,24 +384,39 @@ a:hover {
 
 /* Filter-hotel */
 
-.filter-hotel {
+.background-inner {
   background: url(../img/background-inner.jpg);
 }
 
-.filter {
-  display: inline-block;
+.filter-hotel {
+  background: url(../img/background-inner.jpg) no-repeat;
+  width:1200px;
+  height: 217px;
 }
 
+
+
+.form {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-top: 27px;
+}
+
+.filter {
+  border:0 none;
+ }
 
 .infrastructure {
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
   color: var(--base-white);
+  padding-left: 72px;
 }
 
 .infrastructure-list {
   list-style: none;
+  padding-left: 72px;
   }
 
  .infrastructure-item {
@@ -380,11 +424,13 @@ a:hover {
   font-size: 14px;
   line-height: 21px;
   color: var(--base-white);
+  padding-bottom: 23px;
  } 
 
 
 .accommodation-list {
   list-style: none;
+  padding-left: 0;
 }
 .accommodation {
   font-weight: bold;
@@ -397,7 +443,8 @@ a:hover {
   font-weight: bold;
   font-size: 14px;
   line-height: 21px;
-  color: var(--base-white)
+  color: var(--base-white);
+  padding-bottom: 23px;
 }
 
 .hotel-price {
@@ -420,6 +467,8 @@ a:hover {
   line-height: 21px;
   color: var(--base-white);
   background-color: transparent;
+  text-transform: uppercase;
+  border: 2px solid #FFFFFF;
 }
 
 .show:hover {
@@ -433,29 +482,28 @@ a:hover {
 .found-list {
   display: flex;
   justify-content: flex-start;
+  margin-top: 29px;
 }
 
 .found {
-  align-self: baseline;
   font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
+  margin-left: 73px;
 }
-
-
-
 
 
 .assortment {
-  align-self: baseline;
+  display: flex;
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
+  margin-left: 57px;
 }
+
+
 .assortment-result {
   list-style: none;
   display: flex;
-  align-self: baseline;
+  flex-grow: 1;
 }
 .assortment-type1 {
   font-weight: normal;
@@ -479,25 +527,35 @@ a:hover {
 .hotel {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  margin-left: 73px;
+  padding-top: 24px;
+  padding-bottom: 30px;
+  border: 1px solid #E5E5E5;
+  border-right: 0 none;
+  border-left: 0 none;
 }
 
 .hotel1 {
-  text-align: center;
+  margin-left: 29px;
+  flex-grow: 1;
 }
 
-.hotel2 {
-  text-align: center;
+.hotel-item {
+  display: grid;
+  grid-template-columns: 110px 142px;
+  gap: 6px;
+  margin-top: 7px;
+  margin-bottom: 15px;
 }
 
-.hotel3 {
-  text-align: center;
+
+.hotel-image {
+  display: block;
 }
 
 .hotel-name {
   font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
+  margin: 0;
 }
 
 .hotel-name:hover {
@@ -522,6 +580,7 @@ a:hover {
   line-height: 21px;
   color: var(--base-white);
   background-color: var(--blue-base);
+  padding: 3px 17px;
 }
 
 .link-hotelinfo:hover {
@@ -535,6 +594,7 @@ a:hover {
   line-height: 21px;
   color: var(--base-white);
   background-color: var(--brown-base);
+  padding: 3px 17px;
 }
 
 .book:hover {
@@ -543,38 +603,41 @@ a:hover {
 }
 
 .rating {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.rating-star {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
   background-color: var(--field-background-base);
+  padding: 3px 17px;
+  vertical-align: 0pt;
 }
 
 
 /* Footer */
 
 .page-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-around;
 }
 
 
 .contacts {
-  width: 400px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 23px;
 }
 
 .hashtag {
   font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
-  margin-top: 23px;
-  padding-bottom: 9px
 }
 
 .tel {
   font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
   color: var(--black-base);
 }
 
@@ -608,7 +671,16 @@ a:hover {
   padding: 16px 13px;
 }
 
+
 .html-logo:hover {
   color: var(--blue-hover);
 }
 
+.link-htmlacademy {
+  display: flex;
+  padding-top: 23px;
+}
+
+.link-logo {
+  display: inline-block;
+}
