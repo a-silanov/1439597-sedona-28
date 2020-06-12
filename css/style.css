@@ -69,6 +69,7 @@ a:hover {
   font-weight: bold;
   font-size: 14px;
   color: var(--black-base);
+  position: relative;
 }
 
 
@@ -77,7 +78,7 @@ a:hover {
   height: 70;
   position: absolute;
   top: 0;
-  left: -50%;
+  left: 50%;
   transform: translateX(-50%);
 }
 
@@ -125,12 +126,12 @@ a:hover {
   color: var(--black-base);
 }
 
-.menu-list a {
-  color: var(--black-base);
-}
-
-.menu-list li:hover {
+.menu-list:hover {
   color: var(--blue-base);
+}
+.menu-list:active {
+  color: var(--black-base);
+  opacity: 0.3;
 }
 
 
@@ -306,6 +307,14 @@ a:hover {
   background-color: var(--brown-hover);
 }
 
+.search-hotel:active {
+  background-color: var(--brown-active);
+}
+.search-active:active {
+  color: var(--base-white);
+  opacity: 0.3;
+}
+
 .search-field {
   background-color: var(--field-background-base);
 }
@@ -356,6 +365,14 @@ a:hover {
   background-color: var(--blue-hover);
 }
 
+.search-button:active {
+  background-color: var(--blue-active);
+}
+
+.search-button-active:active {
+  color: var(--base-white);
+  opacity: 0.3;
+}
 /* Inner */
 
 /* Filter-hotel */
@@ -483,6 +500,7 @@ a:hover {
   list-style: none;
   display: flex;
   flex-grow: 1;
+  margin: 0;
 }
 .assortment-type1 {
   font-weight: normal;
@@ -567,6 +585,10 @@ a:hover {
   background-color: var(--blue-hover);
 }
 
+.link-hotelinfo:active {
+  color: var(--blue-active);
+}
+
 .book {
   font-weight: bold;
   font-size: 14px;
@@ -579,6 +601,9 @@ a:hover {
 .book:hover {
   color: var(--base-white);
   background-color: var(--brown-hover);
+}
+.book:active {
+  background-color: var(--brown-active);
 }
 
 .rating {
@@ -624,7 +649,6 @@ a:hover {
   display: grid;
   grid-template-columns: 46px 46px 46px;
   grid-gap: 6px;
-  margin-bottom: 36px;
   margin-top: 23px;
   list-style: none;
   text-align: center;  
@@ -634,6 +658,13 @@ a:hover {
   text-align: center;
   background-color: var(--blue-base);
   margin-bottom: 37px;
+}
+
+.social-icon:hover {
+  background-color: var(--blue-hover);
+}
+.social-icon:active {
+  background-color: var(--blue-active);
 }
 
 .twitter {
@@ -650,11 +681,6 @@ a:hover {
   padding: 16px 13px;
 }
 
-
-.html-logo:hover {
-  color: var(--blue-hover);
-}
-
 .link-htmlacademy {
   display: flex;
   padding-top: 23px;
@@ -663,3 +689,8 @@ a:hover {
 .link-logo {
   display: inline-block;
 }
+
+.html-logo:hover {
+  color: var(--blue-hover);
+}
+
