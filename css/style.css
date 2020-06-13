@@ -267,12 +267,6 @@ a:hover {
   align-items: center;
 }
 
-.search-form {
-  display: flex;
-  flex-direction: column;
-  align-content: space-around;
-  width: 458px;
-}
 
 .search {
   padding-top: 58px;
@@ -319,22 +313,35 @@ a:hover {
   background-color: var(--field-background-base);
 }
 
+.filter-hotel-form {
+  display: flex;
+  flex-direction: column;
+  width: 568px;
+}
+
 .arriving-date {
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 57px;
 }
 
 .departure-date {
+  display: flex;
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
+  margin-top: 31px;
+  width: 568px;
 }
 
 .adults {
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
+  width: 112px;
 }
 
 .children {
@@ -345,8 +352,14 @@ a:hover {
 
 .search-field {
   font-weight: bold;
-  font-size: 11px;
-  line-height: 11px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 200px;
+  width: 346px;
+  border: none;
 }
 
 .search-button {
@@ -358,7 +371,13 @@ a:hover {
   line-height: 26px;
   padding: 16px 182px;
   text-transform: uppercase;
+  width: 458px;
 }
+
+
+
+
+
 
 .search-button:hover {
   color: white;
@@ -570,7 +589,6 @@ a:hover {
 
 
 .assortment {
-  display: flex;
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
@@ -596,6 +614,7 @@ a:hover {
   line-height: 18px;
   color: var(--black-base);
   opacity: 0.3;
+  padding-left: 32px;
 }
 
 .assortment-type2:hover {
@@ -690,7 +709,7 @@ a:hover {
 
 .rating {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 
 .rating-star {
@@ -699,9 +718,8 @@ a:hover {
   line-height: 21px;
   background-color: var(--field-background-base);
   padding: 3px 17px;
-  vertical-align: 0pt;
+  margin-top: 50px;
 }
-
 
 /* Footer */
 

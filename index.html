@@ -105,47 +105,47 @@
               и толпится там</p>
           </div>
           </div>
-        
         </section>  
-        <div class="search">
-          <h2 class="search-title">заинтересовались?</h2>
-          <p class="search-description">
-          укажите предполагаемые даты поездки,<br>
-          и мы покажем вам лучшие предложения гостиниц в седоне
-          </p>
-        </div>
+
+
         <div class="hotel-form">
           <button class="search-hotel"><span class="search-active">поиск гостиницы в седоне</span></button>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-            <p class="arriving-date">
-              <label for="arriving-date">дата заезда</label>
+            <div class="filter-hotel-form">
+            <div class="arriving-date">
+              <label for="arriving-date">дата заезда:</label>
               <input class="search-field" id="arriving-date" type="text" name="date" placeholder="01 января 2000"
                value="24 апреля 2017">
-            </p>
-            <p class="departure-date">
-              <label for="departure-date">дата выезда</label>
+            </div>
+            <div class="departure-date">
+              <label for="departure-date">дата выезда:</label>
               <input class="search-field" id="departure-date" type="text" name="date" placeholder="01 января 2000"
                value="4 июля 2017">
-            </p>
-            <p class="adults">
+            </div>
+            <div class="adults">
               <label for="adults">взрослые:</label>
-              <button class="search-field" type="button">-</button> 
+              <button class="search-field-2" type="button">-</button> 
               <input class="search-field" id="adults" name="quantity" type="text" value="2">
               <button class="search-field" type="button">+</button>
-            </p>
-            <p class="children">
+            </div>
+            <div class="children">
               <label for="children">дети:</label>
-              <button class="search-field" type="button">-</button> 
+              <button class="search-field-2" type="button">-</button> 
               <input class="search-field" id="children" name="quantity" type="text" value="0">
               <button class="search-field" type="button">+</button>
-            </p>
+            </div>
             <button class="search-button" type="submit"><span class="search-button-active">найти</span></button>
+           </div>
           </form>        
-        </div>
+        </div> 
+
+
         <div>
           <img src="img/map.jpg" width="1199" height="594" alt="интерактивная карта">
         </div>
       </main>
+
+
 
       <footer class="page-footer main-footer">    
       <section class="contacts">
