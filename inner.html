@@ -58,13 +58,34 @@
                 </li>
               </ul>      
             </fieldset>
-            <fieldset class="filter">
-              <legend class="hotel-price">стоимость в сутки(р):</legend>
-              <p class="price-from-to">от 0 до 3000</p>
-              <label for="amount"></label>
-                <input type="range" id="amount" min="0" max="3000">
+
+            <fieldset class="filter-item">
+              <legend class="hotel-price">cтоимость в сутки (р):</legend>
+              <div class="range-filter">
+                <div class="price-controls">
+                  <label class="min-price">
+                    от <input type="number" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">
+                    до <input type="number" name="max-price" value="3000" >
+                  </label>
+                </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>
+                </div>
                 <button class="show" type="submit">показать</button>
-            </fieldset>   
+              </div>
+          </fieldset>
+          
+
+
+
+
+
           </form>            
         </div>
 

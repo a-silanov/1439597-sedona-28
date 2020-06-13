@@ -404,12 +404,13 @@ a:hover {
   font-size: 16px;
   line-height: 21px;
   color: var(--base-white);
-  padding-left: 72px;
+  margin-left: 72px;
 }
 
 .infrastructure-list {
   list-style: none;
-  padding-left: 72px;
+  position: absolute;
+  margin-left: 72px;
   }
 
  .infrastructure-item {
@@ -423,7 +424,6 @@ a:hover {
 
 .accommodation-list {
   list-style: none;
-  padding-left: 0;
 }
 .accommodation {
   font-weight: bold;
@@ -448,7 +448,14 @@ a:hover {
   color: var(--base-white)
 }
 
-.price-from-to {
+.min-price {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--base-white)
+}
+
+.max-price {
   font-weight: bold;
   font-size: 14px;
   line-height: 21px;
@@ -456,6 +463,79 @@ a:hover {
 }
 
 
+.filter-item {
+  border: none;
+  position: relative;
+  left: 90px;
+}
+
+.range-filter {
+  width: 317px;
+  margin-top: 11px;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  padding-top: 20px;
+  background-color: transparent;
+  border-radius: 8px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: var(--base-white);
+  opacity: 0.3;
+}
+
+.range-controls .bar {
+  width: 248px;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 11px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--base-white);
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.range-controls .toggle-max {
+  left: 246px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid var(--base-white);
+  border-radius: 2px;
+  padding: 7px;
+}
+
+.price-controls label {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--base-white);
+}
+
+.price-controls input {
+  width: 50px;
+  padding: 0px;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  color: var(--base-white);
+
+}
 
 .show {
   font-weight: bold;
@@ -465,6 +545,8 @@ a:hover {
   background-color: transparent;
   text-transform: uppercase;
   border: 2px solid #FFFFFF;
+  border-radius: 2px;
+  margin-bottom: 32px;
 }
 
 .show:hover {
