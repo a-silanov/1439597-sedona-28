@@ -49,6 +49,9 @@ a:hover {
   color: var(--blue-hover)
 }
 
+label {
+  flex-shrink: 0;
+}
 /* Grid */
 
 .page {
@@ -261,28 +264,11 @@ a:hover {
 
 /* Search-hotel */
 
+/* Search-hotel */
+
 .hotel-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-.search {
-  padding-top: 58px;
-}
-
-.search-title {
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 24px;
-  text-align: center;
-}
-
-.search-description {
-  font-size: 14px;
-  line-height: 21px;
-  text-align: center;
+  position: relative;
+  left: 316px;
 }
 
 .search-hotel {
@@ -309,57 +295,151 @@ a:hover {
   opacity: 0.3;
 }
 
+.search-container {
+  width: 568px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+}
+
+
+.search {
+  padding-top: 58px;
+}
+
+.search-title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.search-description {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
 .search-field {
   background-color: var(--field-background-base);
 }
 
 .filter-hotel-form {
-  display: flex;
-  flex-direction: column;
-  width: 568px;
+  position: relative;
+  margin: 55px;
+  width: 458px;
 }
 
-.arriving-date {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 26px;
+.date-information {
   display: flex;
   justify-content: space-between;
-  margin-top: 57px;
+  align-items: center;
+  margin-bottom: 29px;
+  width: 458px;
+  height: 38px;
 }
 
-.departure-date {
-  display: flex;
+.date-information label {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  min-width: 112px;
+  height: 38px;
+  flex-shrink: 0;
+}
+
+.date-inputzone input {
+  font: inherit;
+  margin-right: 0;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 346px;
+  height: 38px;
+  border: 0;
+  background-color: #f2f2f2;
+  padding: 0;
+  outline: 0;
+}
+
+.date {
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
-  margin-top: 31px;
-  width: 568px;
 }
+
+
+.adults-child {
+  display: flex;
+}
+
+.inputzone {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputzone input {
+  font: inherit;
+  padding-left: 0;
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.button-minus, .button-plus {
+  margin: 0;
+  width: 38px;
+  height: 38px;
+  background-color: #f2f2f2;
+  border: 0;
+  color: #a9a9a9;
+  font-weight: 700;
+  outline: 0;
+}
+
+.button-minus {
+  font-size: 32px;
+}
+
+.button-plus {
+  font-size: 22px;
+}
+
+.adults-child input {
+  font: inherit;
+  padding-left: 0;
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  border: none;
+}
+
 
 .adults {
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
-  width: 112px;
+  min-width: 112px;
+  height: 38px;
 }
 
 .children {
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
+  width: 118px;
+  height: 38px;
 }
 
-.search-field {
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 26px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-right: 200px;
-  width: 346px;
-  border: none;
+.children label {
+  margin-left: 0;
+  padding-left: 54px;
 }
 
 .search-button {
@@ -372,11 +452,8 @@ a:hover {
   padding: 16px 182px;
   text-transform: uppercase;
   width: 458px;
+  margin-top: 54px;
 }
-
-
-
-
 
 
 .search-button:hover {
@@ -392,6 +469,8 @@ a:hover {
   color: var(--base-white);
   opacity: 0.3;
 }
+
+
 /* Inner */
 
 /* Filter-hotel */

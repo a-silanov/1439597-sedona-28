@@ -106,44 +106,66 @@
           </div>
           </div>
         </section>  
-
+        <div class="search">
+          <h2 class="search-title">заинтересовались?</h2>
+          <p class="search-description">
+          укажите предполагаемые даты поездки,<br>
+          и мы покажем вам лучшие предложения гостиниц в седоне
+          </p>
+        </div>
 
         <div class="hotel-form">
           <button class="search-hotel"><span class="search-active">поиск гостиницы в седоне</span></button>
+        </div>
+          <div class="search-container">  
           <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="filter-hotel-form">
-            <div class="arriving-date">
-              <label for="arriving-date">дата заезда:</label>
-              <input class="search-field" id="arriving-date" type="text" name="date" placeholder="01 января 2000"
-               value="24 апреля 2017">
-            </div>
-            <div class="departure-date">
-              <label for="departure-date">дата выезда:</label>
+             <div class="date-information">
+              <p class="date">
+                <label for="date-information">дата заезда:</label>
+              </p>
+              <div class="date-inputzone">
+                <input class="search-field" id="arriving-date" type="text" name="date" placeholder="01 января 2000"
+                 value="24 апреля 2017">
+              </div>   
+             </div>
+            <div class="date-information">
+              <p class="date">
+                <label for="departure-date">дата выезда:</label>
+              </p>
+              <div class="date-inputzone">  
               <input class="search-field" id="departure-date" type="text" name="date" placeholder="01 января 2000"
                value="4 июля 2017">
+              </div>
             </div>
-            <div class="adults">
-              <label for="adults">взрослые:</label>
-              <button class="search-field-2" type="button">-</button> 
-              <input class="search-field" id="adults" name="quantity" type="text" value="2">
-              <button class="search-field" type="button">+</button>
-            </div>
-            <div class="children">
-              <label for="children">дети:</label>
-              <button class="search-field-2" type="button">-</button> 
-              <input class="search-field" id="children" name="quantity" type="text" value="0">
-              <button class="search-field" type="button">+</button>
-            </div>
-            <button class="search-button" type="submit"><span class="search-button-active">найти</span></button>
-           </div>
-          </form>        
-        </div> 
 
-
-        <div>
-          <img src="img/map.jpg" width="1199" height="594" alt="интерактивная карта">
-        </div>
-      </main>
+            <div class="adults-child">
+              <p class="adults">
+                <label for="adults">взрослые:</label>
+              </p>
+              <div class="inputzone">  
+                <button class="button-minus" type="button">-</button> 
+                <input class="search-field" id="adults" name="quantity" type="text" value="2">
+                <button class="button-plus" type="button">+</button>
+              </div>
+              <p class="children">
+                <label for="children">дети:</label>
+              </p>
+              <div class="inputzone">  
+                <button class="button-minus" type="button">-</button> 
+                <input class="search-field" id="children" name="quantity" type="text" value="0">
+                <button class="button-plus" type="button">+</button>
+              </div>
+            </div>  
+              <button class="search-button" type="submit"><span class="search-button-active">найти</span></button>
+            </div>
+       </div>
+      </form>    
+      <div class="map">
+        <img src="img/map.jpg" width="1199" height="594" alt="интерактивная карта"> 
+      </div>    
+    </div> 
+  </main>
 
 
 
