@@ -711,13 +711,13 @@ label {
   padding-top: 27px;
   padding-left: 75px;
   padding-right: 72px;  
-  padding-bottom: 31px;
+  padding-bottom: 14px;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .found {
   font-weight: bold;
-  margin-right: 46px;
+  margin-right: 7px;
 }
 
 
@@ -725,7 +725,8 @@ label {
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
-  margin-right: 40px;
+  margin-top: 1px;
+  padding-right: 38px;
 }
 
 
@@ -733,7 +734,7 @@ label {
   list-style: none;
   display: flex;
   flex-grow: 1;
-  margin: 0;
+  margin-top: 1px;;
 }
 .assortment-type {
   font-weight: normal;
@@ -754,9 +755,11 @@ label {
   color: var(--blue-base);
 }
 
-.icons {
-    width: 34px;
-  }  
+
+  
+  .icon-up {
+    margin-right: 6px;
+  }
 /* Information about hotel */
 
 .hotel {
@@ -785,7 +788,7 @@ label {
 
 .hotel-image {
   display: block;
-  margin-right: 29px;
+  margin-right: 31.5px;
 }
 
 .hotel-name {
@@ -862,10 +865,10 @@ label {
 .page-footer {
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  padding-top: 23px;
+  margin-top: 22px;
   margin-right: 139px;
   margin-bottom: 36px;
-  margin-left: 111px;
+  margin-left: 75px;
 }
 
 
@@ -883,6 +886,7 @@ label {
 .tel {
   font-weight: bold;
   color: var(--black-base);
+  line-height: 26px;
 }
 
 .social-button {
@@ -891,8 +895,8 @@ label {
   grid-gap: 6px;
   list-style: none;
   padding: 0px;
-  margin-top: 13px;
-  margin-left: 163px; 
+  margin-top: 12px;
+  margin-left: 128px; 
 }
 
 .social-icon {
@@ -921,10 +925,10 @@ label {
 }
 
 .link-htmlacademy {
-  margin-top: 18px;
+  margin-top: 15px;
   display: flex;
   justify-content: center;
-  margin-left: 190px;
+  margin-left: 154px;
 }
 
 .link-text {
