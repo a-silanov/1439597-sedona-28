@@ -26,7 +26,7 @@
 /* Global */
 
 body {
-  margin: 0;
+  margin-top: 0;
   padding: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
@@ -35,10 +35,21 @@ body {
   line-height: 26px;
   color: var(--black-base);
   text-transform: uppercase;
-  background-color: var(--base-white);
+  background-color: var(--field-background-base);
   color: var(--black-base);
   width: 1200px;
 }
+
+.content {
+  position: relative;
+  background-color: var(--base-white);
+  max-width: 1200px;
+  min-width: 768px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(0,1,1,.2);
+  box-shadow: 0 5px 15px 0 rgba(0,1,1,.2);
+}
+
 
 a {
   text-decoration: none;
@@ -81,7 +92,7 @@ label {
   width: 138px;
   height: 70;
   position: absolute;
-  top: 0;
+  top: -15px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -93,7 +104,7 @@ label {
 }
 
 .main-navigation li:nth-child(1) {
-  padding-left: 32px;
+  padding-left: 35px;
   width: 94px;
   text-align: left;
   margin: 0;
@@ -110,11 +121,11 @@ label {
   padding: 0;
   width: 98px;
   text-align: left;
-  margin-left: 135px;
+  margin-left: 133px;
 }
 
 .main-navigation li:nth-child(3) {
-  padding-right: 148px;
+  padding-right: 147px;
   width: 120px;
   text-align: right;
   margin-left: 383px;
@@ -363,9 +374,6 @@ label {
   font-size: 14px;
   line-height: 26px;
 }
-::-webkit-input-placeholder {
-  color: var(--black-base);
-}
 
 .calendar {
   border: 0;
@@ -496,10 +504,9 @@ label {
 .form {
   display: flex;
   flex-direction: row;
-  padding-top: 27px;
-  padding-left: 72px;
-  padding-right: 73px;
-  padding-bottom: 31px;
+  padding-top: 10px;
+  padding-left: 74px;
+  padding-right: 40px;
 }
 
 .filter {
@@ -511,15 +518,14 @@ label {
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
-  margin-bottom: 25px;
   color: var(--base-white);
+  margin-bottom: 14px;
 }
 
 
 .list-item {
   list-style: none;
   padding: 0px;
-  margin: 0px;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
@@ -527,7 +533,7 @@ label {
   }
 
  .infrastructure-item {
-  padding-bottom: 23px;
+  padding-bottom: 22px;
  } 
 .accomodation-item {
   padding-bottom: 23px;
@@ -564,22 +570,24 @@ label {
 /* Price */
 
 .filter-price {
-  margin-left: 363px;
+  margin-left: 348px;
 }
 
 .hotel-price {
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
-  color: var(--base-white)
+  color: var(--base-white);
+  margin-bottom: 12px;
 }
 
 .min-price, .max-price {
   font-weight: bold;
   font-size: 14px;
   line-height: 21px;
-  color: var(--base-white)
+  color: var(--base-white);
 }
+
 
 
 .filter-item {
@@ -588,14 +596,13 @@ label {
 
 .range-filter {
   width: 317px;
-  margin-top: 11px;
 }
 
 .range-controls {
   position: relative;
-  padding-top: 20px;
+  padding-top: 16px;
   background-color: transparent;
-  border-radius: 8px;
+  border-radius: 5px;
   padding-bottom: 33px;
 }
 
@@ -612,7 +619,7 @@ label {
 
 .range-controls .toggle {
   position: absolute;
-  top: 11px;
+  top: 5px;
   left: 0;
   width: 4px;
   height: 4px;
@@ -625,7 +632,7 @@ label {
 }
 
 .range-controls .toggle-max {
-  left: 246px;
+  left: 252px;
 }
 
 .price-controls {
@@ -639,13 +646,16 @@ label {
 
 .price-controls .min-price {
   width: 90px;
-  padding-left: 65px;
+  padding-left: 60px;
 }
 
 .price-controls .max-price {
-    width: 90px;
-    padding-left: 57px;
+  width: 90px;
+  margin-right: 4px;
 }
+
+
+
 .price-controls label {
   text-transform: uppercase;
   font-size: 14px;
@@ -668,7 +678,7 @@ label {
   width: 2px;
   height: 22px;
   float: right;
-  margin-left: 10px;
+  margin-left: 20px;
   position: absolute;
   }
 
@@ -681,9 +691,9 @@ label {
   text-transform: uppercase;
   border: 2px solid #FFFFFF;
   border-radius: 2px;
-  padding-top: 7px;
-  padding-right: 35px;
-  padding-bottom: 8px;
+  padding-top: 6px;
+  padding-right: 24px;
+  padding-bottom: 5px;
   padding-left: 36px;
   margin-left: 85px;
 }
@@ -698,9 +708,9 @@ label {
 
 .found-list {
   display: flex;
-  padding-top: 23px;
-  padding-left: 72px;
-  padding-right: 72px;
+  padding-top: 27px;
+  padding-left: 75px;
+  padding-right: 72px;  
   padding-bottom: 31px;
   border-bottom: 1px solid #e5e5e5;
 }
