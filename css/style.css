@@ -104,7 +104,7 @@ label {
 }
 
 .main-navigation li:nth-child(1) {
-  padding-left: 35px;
+  padding-left: 33px;
   width: 94px;
   text-align: left;
   margin: 0;
@@ -121,14 +121,14 @@ label {
   padding: 0;
   width: 98px;
   text-align: left;
-  margin-left: 133px;
+  margin-left: 134px;
 }
 
 .main-navigation li:nth-child(3) {
   padding-right: 147px;
   width: 120px;
   text-align: right;
-  margin-left: 383px;
+  margin-left: 382px;
 }
 
 
@@ -160,7 +160,7 @@ label {
 }
 
 .background2 {
-  margin-top: 77px;
+  margin-top: 79px;
   color: transparent;
   width: 457px;
   height: 351px;
@@ -170,6 +170,8 @@ label {
 
 .about-reasons {
   text-align: center;
+  width: 480px;
+  margin-left: 361px;
 }
 
 .reasons {
@@ -185,12 +187,10 @@ label {
   background-color: #EEEEEE;
   font-size: 14px;
   width: 400px;
-  padding-bottom: 54px;
+  padding-bottom: 39px;
 }
 
 .reasons-with-image {
-  margin: 0;
-  padding: 0;
   width: 400px;
   text-align: center;
   background-color: var(--blue-base);
@@ -199,15 +199,16 @@ label {
   order: 1;
 }
 .reasons-title {
-    font-weight: bold;
-    padding-top: 43px;
-    font-size: 21px;
-    line-height: 26px;
+  font-weight: bold;
+  padding-top: 26px;
+  font-size: 21px;
+  line-height: 27px;
+  margin-bottom: 42px;
   }
 
 .reasons-description {
   font-size: 14px;
-  padding-bottom: 51px;
+  padding-bottom: 38px;
 }
 
 .reason-foto {
@@ -216,26 +217,35 @@ label {
 
 .reasons-name {
   font-size: 21px;
-  line-height: 21px;
-  margin-top: 47px;
+  line-height: 23px;
+  margin-top: 45px;
 }
 
 .reasons-number {
   font-size: 14px;
   line-height: 21px;
-  margin-top: 25px;
+  margin-top: 7px;
 }
+
 
 .reasons-text {
   font-size: 14px;
-  line-height: 21px;
-  margin-top: 23px;
+  line-height: 22px;
+  margin-top: 7px;
+  width: 311px;
+  padding-left: 44px;
 }
 
 .white {
   color: var(--base-white);
 }
+.reasons-number.white {
+  margin-top: 26px;
+}
 
+.reasons-text.white {
+  margin-top: 22px;
+}
 /* Specials */
 
 .specials {
@@ -243,13 +253,13 @@ label {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin:auto;
 }
 
 .specials-type {
   text-align: center;
-  padding-top: 60px;
-  padding-bottom: 81px;
+  width: 304px;
+  padding-top: 57px;
+  padding-bottom: 66px;
 }
 
 .specials-name {
@@ -257,6 +267,7 @@ label {
   font-size: 21px;
   line-height: 21px;
   text-align: center;
+  margin-top: 21px;
 }
 
 .specials-description {
@@ -264,6 +275,8 @@ label {
   font-size: 14px;
   line-height: 21px;
   text-align: center;
+  margin-top: 26px;
+  width: 304px;
 }
 
 
@@ -272,17 +285,19 @@ label {
 .hotel-form {
   position: relative;
   left: 316px;
+  width: 568px;
 }
 
 .search-hotel {
   font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
   font-size: 21px;
   line-height: 26px;
-  text-align: center;
   background-color: var(--brown-base);
   color: var(--base-white);
-  padding: 30px 124px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
@@ -309,7 +324,7 @@ label {
 
 
 .search {
-  padding-top: 58px;
+  padding-top: 31px;
 }
 
 .search-title {
@@ -321,9 +336,9 @@ label {
 
 .search-description {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 23px;
   text-align: center;
-  margin-bottom: 45px;
+  margin-top: 34px;
 }
 
 .search-field {
@@ -496,7 +511,6 @@ label {
 
 .filter-hotel {
   background: url(../img/background-inner.jpg) no-repeat;
-  background-size: cover;
 }
 
 
@@ -504,9 +518,9 @@ label {
 .form {
   display: flex;
   flex-direction: row;
-  padding-top: 10px;
-  padding-left: 74px;
-  padding-right: 40px;
+  padding-top: 11px;
+  padding-left: 71px;
+  padding-right: 38px;
 }
 
 .filter {
@@ -519,7 +533,7 @@ label {
   font-size: 16px;
   line-height: 21px;
   color: var(--base-white);
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 
@@ -533,13 +547,13 @@ label {
   }
 
  .infrastructure-item {
-  padding-bottom: 22px;
+  padding-bottom: 24px;
  } 
 .accomodation-item {
-  padding-bottom: 23px;
+  padding-bottom: 24px;
 }
 .filter-accomodation {
-  padding-left: 119px;
+  padding-left: 120px;
 }
 
 /* Check */
@@ -600,7 +614,7 @@ label {
 
 .range-controls {
   position: relative;
-  padding-top: 16px;
+  padding-top: 21px;
   background-color: transparent;
   border-radius: 5px;
   padding-bottom: 33px;
@@ -619,11 +633,10 @@ label {
 
 .range-controls .toggle {
   position: absolute;
-  top: 5px;
-  left: 0;
+  top: 10px;
+  left: 1px;
   width: 4px;
   height: 4px;
-  padding: 0;
   border: 8px solid var(--base-white);
   background-color: #ababab;
   border-radius: 50%;
@@ -640,7 +653,7 @@ label {
   justify-content: space-between;
   border: 2px solid var(--base-white);
   border-radius: 2px;
-  padding: 7px;
+  padding: 5px;
 }
 
 
@@ -651,7 +664,7 @@ label {
 
 .price-controls .max-price {
   width: 90px;
-  margin-right: 4px;
+  margin-right: 7px;
 }
 
 
@@ -678,7 +691,7 @@ label {
   width: 2px;
   height: 22px;
   float: right;
-  margin-left: 20px;
+  margin-left: 22px;
   position: absolute;
   }
 
@@ -708,8 +721,8 @@ label {
 
 .found-list {
   display: flex;
-  padding-top: 27px;
-  padding-left: 75px;
+  padding-top: 26px;
+  padding-left: 73px;
   padding-right: 72px;  
   padding-bottom: 14px;
   border-bottom: 1px solid #e5e5e5;
@@ -754,11 +767,8 @@ label {
 .assortment-type2:hover {
   color: var(--blue-base);
 }
-
-
-  
-  .icon-up {
-    margin-right: 6px;
+.icon-up {
+  margin-right: 6px;
   }
 /* Information about hotel */
 
@@ -770,7 +780,6 @@ label {
   padding-right: 72px;
   padding-bottom: 30px;
   border-bottom: 1px solid #e5e5e5;
-  align-items: flex-end;
 }
 
 .hotel-description {
@@ -781,14 +790,14 @@ label {
   display: grid;
   grid-template-columns: 110px 142px;
   gap: 6px;
-  margin-top: 7px;
   margin-bottom: 15px;
+  margin-top: 7px;
 }
 
 
 .hotel-image {
   display: block;
-  margin-right: 31.5px;
+  margin-right: 29.5px;
 }
 
 .hotel-name {
@@ -854,21 +863,21 @@ label {
   line-height: 21px;
   background-color: var(--field-background-base);
   padding: 3px 17px;
-  margin-top: 50px;
+  margin-top: 47px;
 }
 
 .stars {
-  margin-left: auto
+  margin-left: auto;
+  margin-top: 5px;
 }
 /* Footer */
 
 .page-footer {
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  margin-top: 22px;
+  margin-top: 21px;
   margin-right: 139px;
-  margin-bottom: 36px;
-  margin-left: 75px;
+  margin-left: 73px;
 }
 
 
@@ -895,8 +904,8 @@ label {
   grid-gap: 6px;
   list-style: none;
   padding: 0px;
-  margin-top: 12px;
-  margin-left: 128px; 
+  margin-top: 13px;
+  margin-left: 126px;
 }
 
 .social-icon {
@@ -912,12 +921,11 @@ label {
 
 .twitter {
   padding-top: 17px;
-  padding-bottom: 16px;
   padding-right: 14px;
-  padding-left: 15px;;
+  padding-left: 15px;
 }
 .facebook {
-  padding: 13px 17px;
+  padding: 11px 17px;
 }
 
 .youtube {
