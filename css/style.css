@@ -56,9 +56,7 @@ a {
   color: var(--black-base)
 }
 
-a:hover {
-  color: var(--blue-hover)
-}
+
 
 
 /* Grid */
@@ -140,7 +138,7 @@ a:hover {
   color: var(--black-base);
 }
 
-.menu-list:hover {
+.menu-item:hover {
   color: var(--blue-base);
 }
 .menu-item:active {
@@ -782,7 +780,7 @@ a:hover {
   list-style: none;
   display: flex;
   flex-grow: 1;
-  margin-top: 1px;;
+  margin-top: 1px;
 }
 .assortment-type {
   font-weight: normal;
@@ -795,13 +793,19 @@ a:hover {
   margin-left: 33px;
 }
 
+.assortment-link:hover {
+  color: var(--blue-base);
+}
+.assortment-link:active {
+  color: var(--black-base);
+  opacity: 1;
+  border-bottom: none;
+}
+
 .assortment-link--active {
   color: var(--blue-base);
 }
 
-.assortment-type2:hover {
-  color: var(--blue-base);
-}
 .icon-up {
   margin-right: 6px;
   }
@@ -972,6 +976,11 @@ a:hover {
   padding-top: 16px;
   padding-left: 13px;
 }
+
+.twitter:active, .facebook:active, .youtube:active {
+  opacity: 0.3;
+}
+
 .link-htmlacademy {
   margin-top: 15px;
   display: flex;
@@ -989,6 +998,3 @@ a:hover {
 }
 
 
-.html-logo:hover {
-  color: var(--blue-hover);
-}
