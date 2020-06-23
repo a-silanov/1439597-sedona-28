@@ -331,10 +331,12 @@ a:hover {
 .search-hotel:active {
   background-color: var(--brown-active);
 }
-.search-active:active {
+
+.search-hotel-link:active {
   color: var(--base-white);
   opacity: 0.3;
 }
+
 
 .search-container {
   width: 568px;
@@ -508,7 +510,7 @@ a:hover {
   text-transform: uppercase;
   width: 468px;
   margin-top: 54px;
-  border:none;
+  border: 0;
 }
 
 
@@ -519,6 +521,7 @@ a:hover {
 
 .search-button:active {
   background-color: var(--blue-active);
+  outline: none;
 }
 
 .search-button-active:active {
