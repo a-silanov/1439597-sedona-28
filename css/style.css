@@ -736,10 +736,11 @@ a {
   border: 2px solid #FFFFFF;
   border-radius: 2px;
   padding-top: 6px;
-  padding-right: 24px;
+  padding-right: 31px;
   padding-bottom: 5px;
-  padding-left: 36px;
+  padding-left: 35px;
   margin-left: 85px;
+  letter-spacing: -0.2mm;
 }
 
 .show:hover {
