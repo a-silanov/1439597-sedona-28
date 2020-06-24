@@ -558,25 +558,23 @@ a {
   font-size: 16px;
   line-height: 21px;
   color: var(--base-white);
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 }
 
 
 .list-item {
   list-style: none;
-  padding: 0px;
+  padding-left: 0px;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
   color: var(--base-white);
   }
 
- .infrastructure-item {
+ .infrastructure-item, .accomodation-item {
   padding-bottom: 24px;
  } 
-.accomodation-item {
-  padding-bottom: 24px;
-}
+
 .filter-accomodation {
   padding-left: 120px;
 }
@@ -636,7 +634,6 @@ a {
 }
 
 
-
 .filter-item {
   border: none;
 }
@@ -647,7 +644,7 @@ a {
 
 .range-controls {
   position: relative;
-  padding-top: 21px;
+  padding-top: 20px;
   background-color: transparent;
   border-radius: 5px;
   padding-bottom: 33px;
@@ -666,7 +663,7 @@ a {
 
 .range-controls .toggle {
   position: absolute;
-  top: 13px;
+  top: 10px;
   left: 1px;
   width: 4px;
   height: 4px;
@@ -686,7 +683,10 @@ a {
   justify-content: space-between;
   border: 2px solid var(--base-white);
   border-radius: 2px;
-  padding: 5px;
+  padding-top: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 7px;
 }
 
 
@@ -699,8 +699,6 @@ a {
   width: 90px;
   margin-right: 7px;
 }
-
-
 
 .price-controls label {
   text-transform: uppercase;
@@ -754,7 +752,7 @@ a {
 
 .found-list {
   display: flex;
-  padding-top: 26px;
+  padding-top: 25px;
   padding-left: 73px;
   padding-right: 72px;  
   padding-bottom: 14px;
@@ -829,14 +827,14 @@ a {
   display: grid;
   grid-template-columns: 110px 142px;
   gap: 6px;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   margin-top: 7px;
 }
 
 
 .hotel-image {
   margin-top: 6px;
-  margin-right: 29.5px;
+  margin-right: 29px;
 }
 
 .hotel-name {
@@ -861,7 +859,7 @@ a {
   line-height: 21px;
   color: var(--base-white);
   background-color: var(--blue-base);
-  padding: 3px 17px;
+  padding: 5px 17px;
 }
 
 .link-hotelinfo:hover {
@@ -879,7 +877,7 @@ a {
   line-height: 21px;
   color: var(--base-white);
   background-color: var(--brown-base);
-  padding: 3px 17px;
+  padding: 5px 17px;
 }
 
 .book:hover {
@@ -914,7 +912,7 @@ a {
 .page-footer {
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  margin-top: 21px;
+  margin-top: 24px;
   margin-right: 139px;
   margin-left: 73px;
 }
@@ -985,7 +983,7 @@ a {
   margin-top: 15px;
   display: flex;
   justify-content: center;
-  margin-left: 154px;
+  margin-left: 149px;
 }
 
 .link-text {
@@ -993,8 +991,7 @@ a {
   line-height: 26px;
   font-weight: normal;
   margin-top: 10px;
-  margin-right: 10px;
+  margin-right: 8px;
   flex-shrink: 0;
 }
-
 
