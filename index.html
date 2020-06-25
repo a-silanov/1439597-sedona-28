@@ -115,19 +115,19 @@
         </div>
 
         <div class="hotel-form">
-          <a class="search-hotel" href="#">
+          <a class="search-hotel">
             <span class="search-hotel-link">поиск гостиницы в седоне</span>
           </a>
-        </div>
-          <div class="search-container">  
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="filter-hotel-form">
-             <div class="date-information">
+
+          <div class="modal search-container">  
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="filter-hotel-form">
+                <div class="date-information">
               <p class="date">
-                <label for="date-information">дата заезда:</label>
+                <label for="arriving-date">дата заезда:</label>
               </p>
               <div class="date-inputzone">
-                <input class="search-field" id="arriving-date" type="text" name="date" placeholder="24 апреля 2017"
+                <input class="search-field" id="arriving-date" type="text" name="date" placeholder="   24 апреля 2017"
                  value="">
                 <button class="calendar" type="button">
                   <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -136,13 +136,13 @@
                     </svg>
                 </button> 
               </div>   
-             </div>
-            <div class="date-information">
+                </div>
+                <div class="date-information">
               <p class="date">
                 <label for="departure-date">дата выезда:</label>
               </p>
               <div class="date-inputzone">  
-              <input class="search-field" id="departure-date" type="text" name="date" placeholder="4 июля 2017"
+              <input class="search-field" id="departure-date" type="text" name="date" placeholder="   4 июля 2017"
                value="">
                <button class="calendar" type="button">
                 <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -151,9 +151,8 @@
                   </svg>
               </button> 
               </div>
-            </div>
-
-            <div class="adults-child">
+                </div>
+                <div class="adults-child">
               <p class="adults">
                 <label for="adults">взрослые:</label>
               </p>
@@ -170,13 +169,15 @@
                 <input class="search-field" id="children" name="quantity" type="text" value="0">
                 <button class="button-plus" type="button">+</button>
               </div>
-            </div class="button-search-hotel">  
+            </div>   
+            <div class="button-search-hotel">  
               <button class="search-button" type="submit"><span class="search-button-active">найти</span></button>
             </div>
-       </div>
-      </form>    
+              </div>
+        </form>
+          </div>    
       <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26191.715720286822!2d-111.7933366!3d34.8571202!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sde!4v1592163135734!5m2!1sru!2sde" width="1200" height="594" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26191.715720286822!2d-111.7933366!3d34.8571202!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sde!4v1592163135734!5m2!1sru!2sde" width="1200" height="465" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>    
     </div> 
   </main>
