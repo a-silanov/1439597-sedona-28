@@ -336,7 +336,7 @@ a {
 
 .search-container {
   width: 568px;
-  position: relative;
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
   background-color: #fff;
@@ -346,8 +346,6 @@ a {
 .modal-show {
   display: block;
 }
-
-
 
 .search-field {
   background-color: var(--field-background-base);
@@ -528,6 +526,7 @@ a {
   color: var(--base-white);
   opacity: 0.3;
 }
+
 
 
 /* Inner */
