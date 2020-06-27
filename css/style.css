@@ -148,6 +148,9 @@ a {
   opacity: 0.3;
 }
 
+.menu-item--active {
+  color: var(--brown-base);
+}
 
 .background {
   display: flex;
@@ -805,8 +808,24 @@ a {
   color: var(--blue-base);
 }
 
+.icon-up svg, .icon-down svg {
+  fill: var(--rating-base);
+}
+
+.icon-up:hover svg, .icon-down:hover svg {
+  fill: var(--black-base);
+}
+
+.icon-up:active svg, .icon-down:active svg {
+  fill: var(--blue-hover);
+}
+
 .icon-up {
   margin-right: 6px;
+  }
+
+  .icon-down svg {
+    fill: var(--blue-base);
   }
 /* Information about hotel */
 
@@ -846,6 +865,11 @@ a {
 
 .hotel-name:hover {
   color: var(--blue-hover);
+}
+
+.hotel-name:active {
+  color: var(--black-base);
+  opacity: 0.3;
 }
 
 .hotel-type, .price {
