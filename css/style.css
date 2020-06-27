@@ -442,32 +442,27 @@ a {
   font-weight: bold;
 }
 
-.button-minus, .button-plus {
+.button-plus-minus {
   margin-top: 6px;
   width: 38px;
   height: 38px;
-  background-color: #f2f2f2;
   border: 0;
-  color: #a9a9a9;
-  font-weight: 700;
   outline: 0;
 }
 
-.button-minus {
-  font-size: 32px;
+.button-plus-minus svg {
+  fill: var(--gray-base);
 }
 
-.button-minus:hover, .button-plus:hover {
-  color: var(--black-base);
+.button-plus-minus:hover svg {
+  fill: var(--black-base);
 }
 
-.button-minus:active, .button-plus:active {
-  color: var(--blue-active);
+.button-plus-minus:active svg {
+  fill: var(--blue-active);
 }
 
-.button-plus {
-  font-size: 22px;
-}
+
 
 .adults-child input {
   padding-left: 0;
