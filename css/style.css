@@ -355,6 +355,11 @@ a {
   background-color: var(--field-background-base);
 }
 
+.search-field:focus {
+  background-color: var(--base-white);
+  outline: none;
+}
+
 .filter-hotel-form {
   position: relative;
   margin: 55px;
