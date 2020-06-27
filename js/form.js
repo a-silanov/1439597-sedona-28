@@ -3,5 +3,5 @@ var popup = document.querySelector(".search-container");
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popup.classList.add("modal-show");
+  popup.classList.toggle("modal-show");
 });

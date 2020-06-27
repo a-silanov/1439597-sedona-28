@@ -306,9 +306,6 @@ a {
   margin-top: 36px;
 }
 
-
-
-
 .search-hotel {
   display: block;
   background: #766357;
@@ -393,7 +390,9 @@ a {
   height: 38px;
   border: 0;
   background-color: #f2f2f2;
-  padding: 0;
+  bottom: 0ex;
+  box-sizing: border-box;
+  padding: 10px;
   outline: 0;
 }
 
@@ -429,13 +428,13 @@ a {
 
 .inputzone {
   display: flex;
-  justify-content: space-between;
+  margin-top: 8px;
 }
 
 .inputzone input {
-  margin-top: 5px;
   padding-left: 0;
   width: 38px;
+  height: 38px;
   text-align: center;
   font-size: 14px;
   line-height: 26px;
@@ -443,9 +442,8 @@ a {
 }
 
 .button-plus-minus {
-  margin-top: 6px;
   width: 38px;
-  height: 38px;
+  height: 40px;
   border: 0;
   outline: 0;
 }
