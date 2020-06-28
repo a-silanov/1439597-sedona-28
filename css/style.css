@@ -948,10 +948,13 @@ a {
 .page-footer {
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  margin-top: 15px;
+  margin-top: 23px;
   margin-right: 139px;
   margin-left: 73px;
-  padding-bottom: 14px;
+}
+
+.main-footer {
+  margin-top: 15px;
 }
 
 
@@ -1004,7 +1007,6 @@ a {
   padding-top: 13px;
   padding-left: 17px;
   padding-bottom: 7px;
-
 }
 
 .youtube {
