@@ -9,20 +9,20 @@
   </head>
 
   <body class="page-body">
-  <div class="content">
-    <header class="main-header">
-      <a class="logo-sedona" href="index.html">
-        <img src="img/logo-sedona.svg" width="138" height="70" alt="Лого">
-      </a>
-      <nav class="main-navigation">
-        <ul class="menu-list">
-          <li><a class="menu-item" href="blank.html">Информация</a></li>
-          <li><a class="menu-item" href="blank.html">Фото и Видео</a></li>
-          <li><a class="menu-item" href="blank.html">Карта штата</a></li>
-          <li><a class="menu-item menu-item--active" href="inner.html">Гостиницы</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="content">
+      <header class="main-header">
+        <a class="logo-sedona" href="index.html">
+          <img src="img/logo-sedona.svg" width="138" height="70" alt="Лого">
+        </a>
+        <nav class="main-navigation">
+          <ul class="menu-list">
+            <li><a class="menu-item" href="blank.html">Информация</a></li>
+            <li><a class="menu-item" href="blank.html">Фото и Видео</a></li>
+            <li><a class="menu-item" href="blank.html">Карта штата</a></li>
+            <li><a class="menu-item menu-item--active" href="inner.html">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </header>
 
     <main class="container">
       <div class="filter-hotel">
@@ -53,7 +53,7 @@
                 </li>
               </ul>
           </div>
-          <div class="filter filter-accomodation">
+            <div class="filter filter-accomodation">
                 <h3 class="filter-title">тип жилья:</h3>
                   <ul class="list-item">
                     <li class="accomodation-item">
@@ -78,18 +78,18 @@
                       </label>
                     </li>
                   </ul>
-              </div>
-          <div class="filter-price">
-            <h3 class="hotel-price">cтоимость в сутки (р):</h3>
-            <div class="range-filter">
-              <div class="price-controls">
-                <label class="min-price">
+            </div>
+            <div class="filter-price">
+              <h3 class="hotel-price">cтоимость в сутки (р):</h3>
+              <div class="range-filter">
+                <div class="price-controls">
+                  <label class="min-price">
                   от <input type="text" name="min-price" value="0">
-                </label>
-                <label class="max-price">
+                  </label>
+                  <label class="max-price">
                   до <input type="text" name="max-price" value="3000" >
-                </label>
-              </div>
+                  </label>
+                </div>
               <div class="range-controls">
                 <div class="scale">
                   <div class="bar"></div>
@@ -104,25 +104,25 @@
       </div>
         <div class="found-list">
           <div class="found">найдено: 3</div>
-           <ul class="assortment-result">
-             <li class="assortment">сортировка:</li>
-             <li class="assortment-type">
-              <a class="assortment-link--active" href="#">по цене</a>
-             </li>
-             <li class="assortment-type">
-              <a class="assortment-link" href="#">по типу</a>
-             </li>
-             <li class="assortment-type">
-              <a class="assortment-link" href="#">по рейтингу</a>
-             </li>
+            <ul class="assortment-result">
+               <li class="assortment">сортировка:</li>
+               <li class="assortment-type">
+                 <a class="assortment-link--active" href="#">по цене</a>
+               </li>
+               <li class="assortment-type">
+                 <a class="assortment-link" href="#">по типу</a>
+               </li>
+               <li class="assortment-type">
+                 <a class="assortment-link" href="#">по рейтингу</a>
+               </li>
            </ul>
            <div class="icons">
-            <a class="icon-up" href="#"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5.5 0L0 10H11L5.5 0Z"/>
-              </svg></a>
-            <a class="icon-down" href="#"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5.5 10L0 0H11"/>
-              </svg></a>
+             <a class="icon-up" href="#"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 0L0 10H11L5.5 0Z"/>
+             </svg></a>
+             <a class="icon-down" href="#"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 10L0 0H11"/>
+             </svg></a>
            </div>
          </div>
 
@@ -139,7 +139,7 @@
           </div>
           <div class="info-book-link">
             <a class="link-hotelinfo" href="#">подробнее</a>
-            <a class="book" href="#">забронировать</a>
+            <a class="book" href="#"><span class="book-active">забронировать</span></a>
           </div>
         </div>  
           <div class="rating">
@@ -165,7 +165,7 @@
         </div>
         <div class="info-book-link">
           <a class="link-hotelinfo" href="#">подробнее</a>
-          <a class="book" href="#">забронировать</a>
+          <a class="book" href="#"><span class="book-active">забронировать</span></a>
         </div>
       </div>  
         <div class="rating">
@@ -190,7 +190,7 @@
       </div>
       <div class="info-book-link">
         <a class="link-hotelinfo" href="#">подробнее</a>
-        <a class="book" href="#">забронировать</a>
+        <a class="book" href="#"><span class="book-active">забронировать</span></a>
       </div>
     </div>  
       <div class="rating">
@@ -203,13 +203,13 @@
    </div>    
   </main>    
 
-  <footer class="page-footer">    
-    <section class="contacts">
+    <footer class="page-footer">    
+      <section class="contacts">
       <h2 hidden>обратная связь</h2>
       <div class="hashtag">#visitsedona</div>
       <div class="tel"><a href="tel:+7(495)666-02-66">тел: +7(495) 666-01-66</a></div>
-    </section>
-    <section class="social-network">  
+      </section>
+      <section class="social-network">  
       <ul class="social-button">
         <li class="social-icon">
           <a href="#"><svg class="twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg></a>
@@ -221,8 +221,8 @@
           <a href="#"><svg class="youtube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg></a>
         </li>
       </ul>
-    </section>
-    <div class="link-htmlacademy">
+      </section>
+      <div class="link-htmlacademy">
        <div class="link-text">website by</div>
        <div class="copyright">
         <a class="link-logo" href="https://htmlacademy.ru/intensive/htmlcss"><svg width="122" height="49" viewBox="0 0 122 49" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -243,8 +243,8 @@
           </svg>
         </a>
     </div>
-    </div>
+      </div>
     </footer>
-    </div>
-   </body>
- </html>    
+  </div>
+ </body>
+</html>    
