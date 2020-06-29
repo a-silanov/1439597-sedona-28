@@ -817,7 +817,7 @@ a {
   border-bottom: none;
 }
 
-.assortment-link--active {
+.active {
   color: var(--blue-base);
 }
 
@@ -968,7 +968,7 @@ a {
   bottom: 0;
   left: 0;
   top: 3;
-  background-color: rgba(255,255,255,.9);
+  background-color: var(--base-white);
   padding-top: 23px;
   padding-bottom: 13px;
 }
