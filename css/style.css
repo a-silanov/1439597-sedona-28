@@ -527,6 +527,8 @@ a {
   opacity: 0.3;
 }
 
+/* Map */
+
 .map iframe {
   display: block;
   border: none;
