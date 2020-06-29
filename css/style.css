@@ -434,7 +434,7 @@ a {
 
 .inputzone {
   display: flex;
-  margin-top: 6px;
+  margin-top: 8px;
   height: 38px;
 }
 
@@ -453,7 +453,9 @@ a {
   border: 0;
   outline: 0;
 }
-
+.minus {
+  padding-bottom: 9px;
+}
 .button-plus-minus svg {
   fill: var(--gray-base);
 }
