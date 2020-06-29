@@ -527,19 +527,20 @@ a {
   opacity: 0.3;
 }
 
-
+.map iframe {
+  display: block;
+  border: none;
+  width: 100%;
+  height: 585px;
+}
 
 /* Inner */
 
 /* Filter-hotel */
 
-
-
 .filter-hotel {
   background: url(../img/background-inner.jpg) no-repeat;
 }
-
-
 
 .form {
   display: flex;
@@ -945,6 +946,8 @@ a {
   margin-left: auto;
   margin-top: 5px;
 }
+
+
 /* Footer */
 
 .page-footer {
