@@ -692,7 +692,8 @@ a {
 	border-bottom: none;
 }
 .active {
-	color: var(--blue-base);
+  color: var(--blue-base);
+  border-bottom: none;
 }
 .icon-up svg, .icon-down svg {
 	fill: var(--rating-base);
