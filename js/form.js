@@ -1,7 +1,8 @@
 var link = document.querySelector(".search-hotel");
 var popup = document.querySelector(".search-container");
-var arrivingDate = popup.querySelector("[name=date]");
-var form = popup.querySelector("search-form"); 
+var arrivingDate = popup.querySelector(".arriving");
+var departureDate = popup.querySelector(".departure");
+var form = popup.querySelector(".search-form"); 
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -9,6 +10,12 @@ link.addEventListener("click", function (evt) {
   arrivingDate.focus();
 });
 
-form.addEventListener("submit", function () {
-  console.log("Отправляем форму");
+form.addEventListener("submit", function (evt) {
+  if (!arrivingDate.value || !departureDate.value) {
+  evt.preventDefault();
+  popup.classList.add("modal-error");
+  }
 });
+
+
+
