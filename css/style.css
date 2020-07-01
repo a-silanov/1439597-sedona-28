@@ -84,48 +84,36 @@ a {
 	width: 1200px;
 	background-color: var(--base-white);
 }
-.main-navigation li:nth-child(1) {
-	padding-left: 33px;
-	width: 94px;
+.menu-item {
+	width: 197px;
 	text-align: left;
-	margin: 0;
+	margin-left: 32px;
 }
-.main-navigation li:nth-child(4) {
-	padding-right: 44px;
-	width: 80px;
+.menu-item:nth-child(4n+3) {
+	margin-left: 206px;
+}
+.menu-item:nth-child(4n+3), .menu-item:nth-child(4n+4) {
+	width: 197px;
 	text-align: right;
-	margin: 0;
-}
-.main-navigation li:nth-child(2) {
-	padding: 0;
-	width: 98px;
-	text-align: left;
-	margin-left: 134px;
-}
-.main-navigation li:nth-child(3) {
-	padding-right: 147px;
-	width: 120px;
-	text-align: right;
-	margin-left: 382px;
-}
+	}
 .menu-list {
 	display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+	flex-direction: row;
+    flex-wrap: wrap;
 	list-style: none;
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 14px;
 	color: var(--black-base);
 }
-.menu-item:hover {
+.menu-item-link:hover {
 	color: var(--blue-base);
 }
-.menu-item:active {
+.menu-item-link:active {
 	color: var(--black-base);
 	opacity: 0.3;
 }
-.menu-item--active {
+.menu-item-link--active {
 	color: var(--brown-base);
 }
 .background {
