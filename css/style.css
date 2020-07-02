@@ -321,13 +321,7 @@ a {
 		transform: translateX(10px);
 	}
 }
-.search-field {
-	background-color: var(--field-background-base);
-}
-.search-field:focus {
-	background-color: var(--base-white);
-	outline: 2px solid var(--field-border);
-}
+
 .filter-hotel-form {
 	position: relative;
 	margin: 55px;
@@ -350,6 +344,13 @@ a {
 	height: 38px;
 	flex-shrink: 0;
 }
+.search-field {
+	background-color: var(--field-background-base);
+}
+.search-field:focus {
+	background-color: var(--base-white);
+	outline: 2px solid var(--field-border);
+}
 .date-inputzone input {
 	font: inherit;
 	font-size: 14px;
@@ -363,6 +364,7 @@ a {
 	box-sizing: border-box;
 	padding-left: 13px;
 }
+
 .date {
 	font-weight: bold;
 	font-size: 14px;
