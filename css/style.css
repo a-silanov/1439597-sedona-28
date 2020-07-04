@@ -635,6 +635,7 @@ a {
 	font-size: 14px;
 	line-height: 21px;
 	color: var(--base-white);
+	font-weight: normal;
 }
 .price-controls input {
 	width: 50px;
